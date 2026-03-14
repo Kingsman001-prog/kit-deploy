@@ -1,0 +1,136 @@
+.quiz-container{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 9999; 
+    
+    background: white;   
+}
+.quiz-container::before{
+    content: "Kids In Technology";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    opacity: 10%;
+}
+.ring{
+   width: 90%;
+   height: 30vh;
+   display: flex    ;
+   align-items: center;
+   justify-content: space-around;
+   padding: 0 2rem;
+}
+.boxer{
+    width: 30%;
+    padding: 1rem 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 12px;
+}
+.scoreboard{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 1rem;
+    background: rgba(0, 0, 255, 0.1);
+    padding: 1rem 1rem;
+    border-radius: 12px;
+}
+.boxer-a{
+    background: rgba(255, 90, 0, 0.9);
+    color: white;
+}
+.boxer-b{
+    background: rgba(90, 0, 255, 0.9);
+    color: white;
+}
+.score{
+    font-size: 2rem;
+}
+.question-box{
+    width: 90%;
+    background: linear-gradient(90deg, rgba(255, 90, 0, 0.9) , rgba(90, 0, 255, 0.9) );
+    text-align: center;
+    border-radius: 12px;
+    padding: 1rem 1rem;
+}
+.questions h2{
+    color: white;
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+ button{
+    font-size: 14px;
+    font-weight: bolder;
+    border: none;
+    margin-top: 7px;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.opt-b, .opt-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opt-b button{
+    background: rgba(90, 0, 255, 0.9);
+}
+.opt-a button{
+    background: rgba(255, 90, 0, 0.9);
+}
+.game-over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.winner{
+    background: white;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+
+

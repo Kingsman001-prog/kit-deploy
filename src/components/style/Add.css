@@ -1,0 +1,212 @@
+.addition-container{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.addition-container::before{
+    content: "Kids In Technology";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    font-weight: bolder;
+    opacity: 10%;
+    transform: rotateZ(-20deg);
+    z-index: -1;
+    color: white;
+}
+
+.left-container{
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+.left-container .question{
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.ans input{
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+.ans input:focus{
+    transform: scale(1.05);
+}
+.btns{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.row{
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+.center{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.center h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+.track{
+    width: 95%;
+    background-color: transparent;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row button{
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+.row button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.bottom{
+    margin-top: 0.4rem;
+}
+
+.bottom span{
+    font-weight: 900;
+    margin-left: 0.2rem;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+.C{
+    background-color: #ff6b6b;
+    color: white;
+}
+.Ans{
+    background-color: #ffd93d;
+    cursor: pointer;
+    color: #333;
+}
+.yellow{
+    color: #ffd93d;
+}
+.correct{
+    color: white;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50%;
+}
+.wrong{
+    color: white;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e72 100%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.No{
+    color: #00d4ff;
+}
+.winner{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+.winner .score{
+    background: white;
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.5s ease;
+}
+@keyframes slideIn{
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.winner .score span{
+    font-size: 5rem;
+    position: relative;
+    color: #ffd93d;
+}
+.winner .score button{
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+.winner .score button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.winner .score h2{
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

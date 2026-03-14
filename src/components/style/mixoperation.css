@@ -1,0 +1,226 @@
+.ground{
+    width: 100%;
+    height: 99vh;
+    background: linear-gradient(180deg, black, black, rgb(3, 3, 65));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+}
+.inner-ground{
+    width: 100%;
+    height: 99vh;
+    background: linear-gradient(180deg, black, black, rgb(20, 20, 20));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cal1-body{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid white;
+    border-radius: 12px;
+    justify-items: center;
+    padding: 7px;
+    background-color: rgb(20, 14, 14);
+    box-shadow: 0px 0px 12px rgb(231, 230, 230);
+}
+.cal1-input{
+    background-color: rgba(7, 184, 238, 0.767);
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal1-input input{
+    background: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+}
+.cal1-question{
+    width: 100%;
+    background: linear-gradient(180deg, black, rgb(26, 22, 22));
+    height: 8vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+.cal1-question p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: gold;
+}
+
+.cal1-buttons{
+    width: 100%;
+    height: inherit;
+}
+
+.cell{
+    display: flex;
+    width: 100%;
+
+}
+.cell button{
+    width: 100%;
+    height: 8vh;
+    border-radius: 12px;
+    margin: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+}
+.middle{
+    width: 50%;
+}
+.race-ground{
+    width: 100%;
+    height: 40vh;
+    border: 1px solid white;
+    border-radius: 12px;
+    transform: perspective(800px) rotateX(45deg);
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.start{
+    height: 100%;
+    width: 5%;
+    margin-left: 7px;
+    background-color: aliceblue;
+}
+
+.end{
+    height: 100%;
+    width: 5%;
+    margin-right: 7px;
+    background-color: rgb(255, 238, 1);
+}
+.a-car{
+    position: absolute;
+    right: 0;
+    top: 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+}
+span{
+    font-size: 10px;
+}
+h1{
+    color: gold;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.win{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.384);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.win-content{
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    width: 50%;
+    height: 30vh;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 2px solid gold;
+    box-shadow: 0px 0px 12px black;
+}
+.win-content p{
+    font-size: 3rem;
+    color: gray;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.win button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 4s ease;
+}
+.win button:hover{
+    background: linear-gradient(45deg, #00ffff, black);
+    color: white;
+    
+}
+.win h1{
+    margin: 0;
+}
+.b-car{
+    bottom:10px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.percentage{
+    background-color: rgb(16, 17, 17);
+    text-align: center;
+    padding: 0.1rem;
+    border-radius: 12px;
+}
+.percentage p{
+    color: aliceblue;
+}
+
+.pop{
+    width: 150px;
+    height: 7vh;
+    background: linear-gradient(180deg, black, rgb(26, 22, 22));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: absolute;
+}
+.pop h5{
+    color: red;
+    text-align: center;
+}
+
+.cell .C{
+    background-color: red;
+}
+.cell .Ans{
+    background-color: yellow;
+}
+
+
